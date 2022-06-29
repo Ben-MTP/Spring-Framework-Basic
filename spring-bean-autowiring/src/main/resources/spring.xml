@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="table" class="com.core.Table">
+        <property name="code" value="TBHN1996" />
+    </bean>
+
+<!--    autowire="byName" call setter-->
+<!--    autowire="byType" call setter-->
+    <bean id="room" class="com.core.Room" autowire="byType">
+    </bean>
+
+</beans>
