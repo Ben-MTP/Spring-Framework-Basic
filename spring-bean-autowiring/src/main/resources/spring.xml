@@ -1,6 +1,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <context:annotation-config />-->
+
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
 
     <bean id="table" class="com.core.Table">
         <property name="code" value="TBHN1996" />
@@ -8,7 +13,7 @@
 
 <!--    autowire="byName" call setter-->
 <!--    autowire="byType" call setter-->
-    <bean id="room" class="com.core.Room" autowire="byType">
+    <bean id="room" class="com.core.Room">
     </bean>
 
 </beans>

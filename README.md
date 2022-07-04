@@ -55,16 +55,24 @@ Trong bài viết này, mình trình bày với các bạn cách khai báo các 
 Bài viết này mình trình bày chi tiết hơn về Setter Injection trong Spring sử dụng tập tin XML.
 
 [DONE] Bean autowiring trong Spring là gì?
+[Project: spring-bean-autowiring]
 Các bạn sẽ biết cách làm thế nào để đưa đối tượng Java này vào đối tượng Java khác một cách tự động.
 
-Bean autowiring sử dụng @Autowired annotation
+[DONE] Bean autowiring sử dụng @Autowired annotation
+[Project: spring-bean-autowiring]
 Các bạn cũng có thể sử dụng @Autowired annotation để tự động đưa đối tượng phụ thuộc vào đối tượng bị phụ thuộc trong Spring.
 
-Nói thêm về AutowiredAnnotationBeanPostProcessor
-Mình dạo qua code của AutowiredAnnotationBeanPostProcessor để xem đối tượng này đã làm gì để có thể đưa đối tượng phụ thuộc vào đối tượng bị phụ thuộc. Các bạn có thể đọc qua để tham khảo.
+[DONE] Nói thêm về AutowiredAnnotationBeanPostProcessor
+[Project: ]
+https://huongdanjava.com/vi/noi-ve-autowiredannotationbeanpostprocessor.html
+Autowire.class, Value.class, Inject.class
 
+Mình dạo qua code của AutowiredAnnotationBeanPostProcessor để xem đối tượng này đã làm gì để có thể đưa đối tượng phụ thuộc vào đối tượng bị phụ thuộc. Các bạn có thể đọc qua để tham khảo.
+logging.config
 Sử dụng annotation @Qualifier trong Spring
 Trong bài viết này, mình hướng dẫn các bạn sử dụng annotation @Qualifier để chỉ định bean cần autowire khi chúng ta có nhiều bean của cùng một đối tượng phụ thuộc trong khung chứa của Spring.
+
+15A30a27a01neo@manhkm
 
 Thao tác với properties files
 Đọc properties files trong Spring sử dụng đối tượng PropertyPlaceholderConfigurer
@@ -107,3 +115,6 @@ Sử dụng ApplicationContextAware và BeanNameAware trong Spring
 
 ## Reference Document:
 https://huongdanjava.com/vi/spring-framework-co-ban
+
+D:\4.NEO\VasGate 2022\module-remote\ban_giao_project\chot_hh_msocial
+
